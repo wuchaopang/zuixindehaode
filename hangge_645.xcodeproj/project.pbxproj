@@ -14,6 +14,12 @@
 		5A7BD5A11C03278D00C3F9CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7BD59F1C03278D00C3F9CF /* LaunchScreen.storyboard */; };
 		5A7BD5AC1C03278D00C3F9CF /* hangge_645Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7BD5AB1C03278D00C3F9CF /* hangge_645Tests.swift */; };
 		5A7BD5B71C03278D00C3F9CF /* hangge_645UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7BD5B61C03278D00C3F9CF /* hangge_645UITests.swift */; };
+		5A7BD5C91C03285F00C3F9CF /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7BD5C81C03285F00C3F9CF /* libsqlite3.0.tbd */; };
+		5A7BD5CE1C0328B000C3F9CF /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7BD5CB1C0328B000C3F9CF /* SQLiteDB.swift */; };
+		5A7BD5CF1C0328B000C3F9CF /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7BD5CC1C0328B000C3F9CF /* SQLTable.swift */; };
+		5A7BD5D01C0328B000C3F9CF /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7BD5CD1C0328B000C3F9CF /* String-Extras.swift */; };
+		5A7BD5D41C03295E00C3F9CF /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 5A7BD5D31C03295E00C3F9CF /* data.db */; };
+		69C4BECD1D2A01B200558474 /* sd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4BECC1D2A01B200558474 /* sd.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,13 @@
 		5A7BD5B21C03278D00C3F9CF /* hangge_645UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hangge_645UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A7BD5B61C03278D00C3F9CF /* hangge_645UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hangge_645UITests.swift; sourceTree = "<group>"; };
 		5A7BD5B81C03278D00C3F9CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A7BD5C41C03280400C3F9CF /* hangge_645-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hangge_645-Bridging-Header.h"; sourceTree = "<group>"; };
+		5A7BD5C81C03285F00C3F9CF /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		5A7BD5CB1C0328B000C3F9CF /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
+		5A7BD5CC1C0328B000C3F9CF /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
+		5A7BD5CD1C0328B000C3F9CF /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
+		5A7BD5D31C03295E00C3F9CF /* data.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.db; sourceTree = "<group>"; };
+		69C4BECC1D2A01B200558474 /* sd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sd.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7BD5C91C03285F00C3F9CF /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +91,9 @@
 		5A7BD58A1C03278D00C3F9CF = {
 			isa = PBXGroup;
 			children = (
+				5A7BD5C81C03285F00C3F9CF /* libsqlite3.0.tbd */,
+				5A7BD5D31C03295E00C3F9CF /* data.db */,
+				5A7BD5CA1C0328B000C3F9CF /* SQLiteDB */,
 				5A7BD5951C03278D00C3F9CF /* hangge_645 */,
 				5A7BD5AA1C03278D00C3F9CF /* hangge_645Tests */,
 				5A7BD5B51C03278D00C3F9CF /* hangge_645UITests */,
@@ -103,6 +120,8 @@
 				5A7BD59D1C03278D00C3F9CF /* Assets.xcassets */,
 				5A7BD59F1C03278D00C3F9CF /* LaunchScreen.storyboard */,
 				5A7BD5A21C03278D00C3F9CF /* Info.plist */,
+				5A7BD5C41C03280400C3F9CF /* hangge_645-Bridging-Header.h */,
+				69C4BECC1D2A01B200558474 /* sd.swift */,
 			);
 			path = hangge_645;
 			sourceTree = "<group>";
@@ -123,6 +142,16 @@
 				5A7BD5B81C03278D00C3F9CF /* Info.plist */,
 			);
 			path = hangge_645UITests;
+			sourceTree = "<group>";
+		};
+		5A7BD5CA1C0328B000C3F9CF /* SQLiteDB */ = {
+			isa = PBXGroup;
+			children = (
+				5A7BD5CB1C0328B000C3F9CF /* SQLiteDB.swift */,
+				5A7BD5CC1C0328B000C3F9CF /* SQLTable.swift */,
+				5A7BD5CD1C0328B000C3F9CF /* String-Extras.swift */,
+			);
+			path = SQLiteDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A7BD5A11C03278D00C3F9CF /* LaunchScreen.storyboard in Resources */,
+				5A7BD5D41C03295E00C3F9CF /* data.db in Resources */,
 				5A7BD59E1C03278D00C3F9CF /* Assets.xcassets in Resources */,
 				5A7BD59C1C03278D00C3F9CF /* Main.storyboard in Resources */,
 			);
@@ -259,7 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7BD5D01C0328B000C3F9CF /* String-Extras.swift in Sources */,
+				5A7BD5CE1C0328B000C3F9CF /* SQLiteDB.swift in Sources */,
+				5A7BD5CF1C0328B000C3F9CF /* SQLTable.swift in Sources */,
 				5A7BD5991C03278D00C3F9CF /* ViewController.swift in Sources */,
+				69C4BECD1D2A01B200558474 /* sd.swift in Sources */,
 				5A7BD5971C03278D00C3F9CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,10 +436,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = hangge_645/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hangge.hangge-645";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hangge_645/hangge_645-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -413,10 +450,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = hangge_645/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hangge.hangge-645";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hangge_645/hangge_645-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -487,6 +526,7 @@
 				5A7BD5BD1C03278D00C3F9CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A7BD5BE1C03278D00C3F9CF /* Build configuration list for PBXNativeTarget "hangge_645Tests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +535,7 @@
 				5A7BD5C01C03278D00C3F9CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A7BD5C11C03278D00C3F9CF /* Build configuration list for PBXNativeTarget "hangge_645UITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +544,7 @@
 				5A7BD5C31C03278D00C3F9CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
